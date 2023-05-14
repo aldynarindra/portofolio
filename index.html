@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 30px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+} 
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="index.html#Foto">Foto</a>
+  <a href="index.html#video">Video</a>
+  <a href="index.html#Hobby" style="float:right">Hobby</a>
+</div>
+
+<div class="header">
+  <h1>My Website</h1>
+  Nama : Aldy Narindra<br>
+  Kelas : X-MM-1 Jurusan: Multimedia <br>
+  Nama Sekolah : SMKS Waskito
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>FOTO AKTIFITAS</h2>
+      <h5>, Dec 31, 2022</h5>
+      <div id="Foto" class="fakeimg"><img src="fotoaldy1.jpeg" width="100%"></div>
+      <p>Acara tahun baru</p>
+      <p>Saya lagi bakar-bakar makanan malam malam terus saya berfoto.</p>
+    </div>
+    <div class="card">
+      <h2>VIDEO AKTIFITAS</h2>
+      <h5>17 Maret, 2023</h5>
+      <div id="video" class="fakeimg">
+
+<video width="100%" height="450" controls>
+  <source src="videobus.mp4" type="video/mp4">
+</video>
+</div>
+      <p>Ini video lagi di bus pulang studytour </p>
+      <p>studytour ke bandung </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg"><img src="foto.png" width="100%' ></div>
+      <p>Aldy from Tangerang</p>
+    </div>
+    <div id="Hobby" class="card">
+      <h3>My Hoby</h3>
+      <li>Main Bola</li>
+      <li>Isi hoby lainnya</li>
+      <li>Isi Hoby Lainnya</li>
+     
+    </div>
+    <div class="card">
+      <h3>My sosial Media</h3>
+      <p>aldynarindra1@gmail.com</p>
+     
+      <p>Instagram: Aldynarindra</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Simple Fortofolio by Aldy @2023</p>
+</div>
+
+</body>
+</html>
